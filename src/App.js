@@ -3,17 +3,12 @@ import { Global, css } from '@emotion/core'
 import styled from '@emotion/styled'
 
 import Navigation from './components/layout/Navigation'
+import Infographics from './components/Infographics'
 
 const Title = styled.h1`
   text-align: center;
   font-size: 3rem;
   font-family: 'Balsamiq Sans', cursive;
-`
-
-const Container = styled.section`
-  width: 100%;
-  height: 350px;
-  margin: 0 auto;
 `
 
 const App = () => {
@@ -31,7 +26,6 @@ const App = () => {
           }
 
           .main {
-            height: 100vmax;
             padding: 2rem;
           }
 
@@ -77,11 +71,9 @@ const App = () => {
           setBackground={setBackground}
         />
 
-        <div className={`${background}-neumorphism`}>
-          <Container>
-            Prueba
-          </Container>
-        </div>
+        <Infographics
+          background={background}
+        />
       </main>
     </>
   );
