@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 
 import Navigation from './components/layout/Navigation'
 import Infographics from './components/Infographics'
+import Footer from './components/layout/Footer';
 
 const Title = styled.h1`
   text-align: center;
@@ -26,7 +27,7 @@ const App = () => {
           }
 
           .main {
-            padding: 2rem;
+            padding: 3rem 0rem;
           }
 
           .javascript {
@@ -66,6 +67,7 @@ const App = () => {
       <main className={`main ${background}`}>
 
         <Title>Infographics</Title>
+
         <Navigation
           background={background}
           setBackground={setBackground}
@@ -74,6 +76,8 @@ const App = () => {
         <Infographics
           background={background}
         />
+
+        <Footer />
       </main>
     </>
   );

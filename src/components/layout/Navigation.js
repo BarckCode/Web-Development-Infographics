@@ -3,8 +3,8 @@ import styled from '@emotion/styled'
 import { Global, css } from '@emotion/core'
 
 const Nav = styled.nav`
-  margin: 1rem 0;
-  padding: 1rem;
+  margin-top: 1rem;
+  padding: 2rem 0;
   text-align: center;
 `
 
@@ -14,6 +14,10 @@ const Navigation = ({ background, setBackground }) => {
     <>
       <Global
         styles={css`
+          .nav-container {
+            margin: 0 2rem;
+          }
+
           .btn {
             background-color: #edf4f2;
             border-color: #edf4f2;
@@ -25,6 +29,12 @@ const Navigation = ({ background, setBackground }) => {
             outline: none;
           }
 
+          .btn:hover {
+            background-color: #000;
+            border-color: #000;
+            color: #edf4f2;
+          }
+
           .btn-active {
             background-color: #000;
             border-color: #000;
@@ -32,7 +42,7 @@ const Navigation = ({ background, setBackground }) => {
           }
         `}
       />
-      <div className={`${background}-neumorphism`}>
+      <div className={`nav-container ${background}-neumorphism`}>
         <Nav>
           <button
             type='button'
