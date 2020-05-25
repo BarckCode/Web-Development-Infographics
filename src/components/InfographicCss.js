@@ -3,6 +3,7 @@ import { Global, css } from '@emotion/core'
 
 const InfographicCss = ({ cssData }) => {
 
+  // Destructuring para obtener los datos a iterar.
   const [ originData ] = cssData
 
   return (

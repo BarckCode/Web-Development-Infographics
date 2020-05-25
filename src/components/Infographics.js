@@ -7,6 +7,8 @@ import InfographicsHtml from './InfographicHtml';
 
 const Infographics = ({ background }) => {
 
+  // "API de Imagenes"
+  //Tokens públicos. El Storage de Firebase esta configurado para recibir solo peticiones de lectura.
   const javascriptData = [
     {
       id: uuidv4(),
@@ -61,6 +63,7 @@ const Infographics = ({ background }) => {
     },
   ]
 
+  // Condición que indica que datos de la "API de Imagenes" se van a utilizar dependiendo del botón seleccionado:
   let infographics
   if(background === 'javascript') {
     infographics = <InfographicsJavascript javascriptData={javascriptData}/>

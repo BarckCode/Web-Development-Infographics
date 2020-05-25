@@ -3,6 +3,7 @@ import { Global, css } from '@emotion/core'
 
 const InfographicJavascript = ({ javascriptData }) => {
 
+  // Destructuring para obtener los datos a iterar.
   const [ originData, variablesData, functionsData ] = javascriptData
 
   return (
@@ -58,6 +59,7 @@ const InfographicJavascript = ({ javascriptData }) => {
           }
         `}
       />
+
       <section className='carousel'>
         <div className='carousel-container'>
           {functionsData.functions.map(infographic => (

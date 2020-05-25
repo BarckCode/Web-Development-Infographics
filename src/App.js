@@ -14,6 +14,7 @@ const Title = styled.h1`
 
 const App = () => {
 
+  //Estado de los botones seleccionados
   const [ background, setBackground ] = useState('javascript')
 
   return (
