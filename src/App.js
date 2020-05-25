@@ -65,6 +65,50 @@ const App = () => {
             box-shadow:  5px 5px 15px #df5d26,
                         -5px -5px 15px #ff6b2c;
           }
+
+          .carousel {
+            width: 100%;
+            margin-top: 2rem;
+            overflow: scroll;
+            position: relative;
+          }
+
+          .carousel-container {
+            white-space: nowrap;
+          }
+
+          .carousel-item {
+            width: 50%;
+            max-width: 450px;
+            border-radius: 25px;
+            overflow: hidden;
+            display: inline-block;
+            transition: all 450ms;
+            transform-origin: center left;
+            margin-right: 10px;
+          }
+
+          .carousel-container:hover .carousel-item {
+            opacity: .15;
+          }
+
+          .carousel-container:hover .carousel-item:hover {
+            margin: 120px 0;
+            transform: scale(1.9);
+            opacity: 1;
+            @media (min-width: 768px) {
+              transform: scale(1.5);
+            }
+          }
+
+          .carousel-item:hover ~ .carousel-item {
+            transform: translate3d(125px, 0, 0);
+          }
+
+          .carousel-item__img {
+            width: 100%;
+            border-radius: 25px;
+          }
         `}
       />
       <main className={`main ${background}`}>

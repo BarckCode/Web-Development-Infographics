@@ -1,25 +1,102 @@
 import React from 'react'
+import { Global, css } from '@emotion/core'
 
 //COMPONENTS:
-import InfographicsJavascript from './InfographicJavascript';
-import InfographicsCss from './InfographicCss';
-import InfographicsHtml from './InfographicHtml';
+import Carousel from './layout/Carousel'
+import ImageCarousel from './layout/ImageCarousel';
 
 //DATA:
 import { javascriptData, cssData, htmlData } from './services/urlImages'
 
+
 const Infographics = ({ background }) => {
 
-  // Condición que indica que datos de la "API de Imagenes" se van a utilizar dependiendo del botón seleccionado:
+  // Componente condicional:
   let infographics
   if(background === 'javascript') {
-    infographics = <InfographicsJavascript javascriptData={javascriptData}/>
+    const [ originData, variablesData, functionsData ] = javascriptData
+
+    infographics = (
+      <>
+        <Global
+          styles={css`
+            body {
+              background-color: #FFD600;
+            }
+          `}
+        />
+        <Carousel>
+          {functionsData.functions.map(infographic => (
+              <ImageCarousel
+                key={infographic.id}
+                infographic={infographic}
+              />
+          ))}
+        </Carousel>
+        <Carousel>
+          {variablesData.variables.map(infographic => (
+              <ImageCarousel
+                key={infographic.id}
+                infographic={infographic}
+              />
+          ))}
+        </Carousel>
+        <Carousel>
+          {originData.origin.map(infographic => (
+              <ImageCarousel
+                key={infographic.id}
+                infographic={infographic}
+              />
+          ))}
+        </Carousel>
+      </>
+    )
 
   } else if(background === 'css') {
-    infographics = <InfographicsCss cssData={cssData}/>
+    const [ originData ] = cssData
+
+    infographics = (
+      <>
+        <Global
+          styles={css`
+            body {
+              background-color: #008CFF;
+            }
+          `}
+        />
+        <Carousel>
+          {originData.origin.map(infographic => (
+              <ImageCarousel
+                key={infographic.id}
+                infographic={infographic}
+              />
+          ))}
+        </Carousel>
+      </>
+    )
 
   } else {
-    infographics = <InfographicsHtml htmlData={htmlData}/>
+    const [ originData ] = htmlData
+
+    infographics = (
+      <>
+        <Global
+          styles={css`
+            body {
+              background-color: #F06429;
+            }
+          `}
+        />
+        <Carousel>
+          {originData.origin.map(infographic => (
+              <ImageCarousel
+                key={infographic.id}
+                infographic={infographic}
+              />
+          ))}
+        </Carousel>
+      </>
+    )
   }
 
   return (
