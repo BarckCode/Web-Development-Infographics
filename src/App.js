@@ -28,6 +28,8 @@ const App = () => {
 
           .main {
             padding: 3rem 0rem;
+            max-width: 1024px;
+            margin: 0 auto;
           }
 
           .javascript {

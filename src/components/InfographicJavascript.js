@@ -26,6 +26,7 @@ const InfographicJavascript = ({ javascriptData }) => {
 
           .carousel-item {
             width: 50%;
+            max-width: 450px;
             border-radius: 25px;
             overflow: hidden;
             display: inline-block;
@@ -42,6 +43,9 @@ const InfographicJavascript = ({ javascriptData }) => {
             margin: 120px 0;
             transform: scale(1.9);
             opacity: 1;
+            @media (min-width: 768px) {
+              transform: scale(1.5);
+            }
           }
 
           .carousel-item:hover ~ .carousel-item {

@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import { Global, css } from '@emotion/core'
 
 const Nav = styled.nav`
-  margin-top: 1rem;
+  margin: 1rem;
   padding: 2rem 0;
   text-align: center;
 `
@@ -15,7 +15,9 @@ const Navigation = ({ background, setBackground }) => {
       <Global
         styles={css`
           .nav-container {
-            margin: 0 2rem;
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
           }
 
           .btn {
@@ -26,6 +28,7 @@ const Navigation = ({ background, setBackground }) => {
             margin: 0 0.25rem;
             font-family: 'Balsamiq Sans', cursive;
             font-weight: 700;
+            font-size: 14px;
             outline: none;
           }
 
