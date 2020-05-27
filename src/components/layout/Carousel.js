@@ -13,12 +13,12 @@ const Title = styled.h3`
   font-size: 1.25rem;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
-  padding: 1rem 0.25rem;
+  padding: 1rem 0.5rem;
   color: #edf4f2;
   background-color: #000;
   @media (min-width: 768px) {
     font-size: 1.5rem;
-    padding: 2.5rem 0.25rem;
+    padding: 2.5rem 0.75rem;
   }
 `
 

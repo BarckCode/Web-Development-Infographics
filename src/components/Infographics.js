@@ -51,7 +51,6 @@ const Infographics = ({ background }) => {
         </Carousel>
       </>
     )
-
   } else if(background === 'css') {
     const [ originData ] = cssData
 

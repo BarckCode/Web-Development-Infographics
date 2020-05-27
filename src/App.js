@@ -1,16 +1,10 @@
 import React, { useState } from 'react';
 import { Global, css } from '@emotion/core'
-import styled from '@emotion/styled'
 
+import Header from './components/layout/Header';
 import Navigation from './components/layout/Navigation'
 import Infographics from './components/Infographics'
 import Footer from './components/layout/Footer';
-
-const Title = styled.h1`
-  text-align: center;
-  font-size: 3rem;
-  font-family: 'Balsamiq Sans', cursive;
-`
 
 const App = () => {
 
@@ -115,7 +109,7 @@ const App = () => {
       />
       <main className={`main ${background}`}>
 
-        <Title>Infographics</Title>
+        <Header/>
 
         <Navigation
           background={background}
