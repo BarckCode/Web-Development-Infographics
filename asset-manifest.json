@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/Web-Development-Infographics/static/js/main.d9fa41dc.chunk.js",
-    "main.js.map": "/Web-Development-Infographics/static/js/main.d9fa41dc.chunk.js.map",
+    "main.js": "/Web-Development-Infographics/static/js/main.62713a37.chunk.js",
+    "main.js.map": "/Web-Development-Infographics/static/js/main.62713a37.chunk.js.map",
     "runtime-main.js": "/Web-Development-Infographics/static/js/runtime-main.85c3de92.js",
     "runtime-main.js.map": "/Web-Development-Infographics/static/js/runtime-main.85c3de92.js.map",
-    "static/js/2.2b7eabe2.chunk.js": "/Web-Development-Infographics/static/js/2.2b7eabe2.chunk.js",
-    "static/js/2.2b7eabe2.chunk.js.map": "/Web-Development-Infographics/static/js/2.2b7eabe2.chunk.js.map",
+    "static/js/2.119fed44.chunk.js": "/Web-Development-Infographics/static/js/2.119fed44.chunk.js",
+    "static/js/2.119fed44.chunk.js.map": "/Web-Development-Infographics/static/js/2.119fed44.chunk.js.map",
     "index.html": "/Web-Development-Infographics/index.html",
-    "precache-manifest.71bf395f117ef981d810c3fd07be7485.js": "/Web-Development-Infographics/precache-manifest.71bf395f117ef981d810c3fd07be7485.js",
+    "precache-manifest.94d28627bef48577791c6a194532bee7.js": "/Web-Development-Infographics/precache-manifest.94d28627bef48577791c6a194532bee7.js",
     "service-worker.js": "/Web-Development-Infographics/service-worker.js",
-    "static/js/2.2b7eabe2.chunk.js.LICENSE.txt": "/Web-Development-Infographics/static/js/2.2b7eabe2.chunk.js.LICENSE.txt"
+    "static/js/2.119fed44.chunk.js.LICENSE.txt": "/Web-Development-Infographics/static/js/2.119fed44.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.85c3de92.js",
-    "static/js/2.2b7eabe2.chunk.js",
-    "static/js/main.d9fa41dc.chunk.js"
+    "static/js/2.119fed44.chunk.js",
+    "static/js/main.62713a37.chunk.js"
   ]
 }
