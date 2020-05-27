@@ -71,6 +71,8 @@ const App = () => {
             margin-top: 2rem;
             overflow: scroll;
             position: relative;
+            display: flex;
+            align-items: center;
           }
 
           .carousel-container {

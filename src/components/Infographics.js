@@ -25,7 +25,7 @@ const Infographics = ({ background }) => {
             }
           `}
         />
-        <Carousel>
+        <Carousel title='Functions'>
           {functionsData.functions.map(infographic => (
               <ImageCarousel
                 key={infographic.id}
@@ -33,7 +33,7 @@ const Infographics = ({ background }) => {
               />
           ))}
         </Carousel>
-        <Carousel>
+        <Carousel title='Variables'>
           {variablesData.variables.map(infographic => (
               <ImageCarousel
                 key={infographic.id}
@@ -41,7 +41,7 @@ const Infographics = ({ background }) => {
               />
           ))}
         </Carousel>
-        <Carousel>
+        <Carousel title='History'>
           {originData.origin.map(infographic => (
               <ImageCarousel
                 key={infographic.id}
@@ -64,7 +64,7 @@ const Infographics = ({ background }) => {
             }
           `}
         />
-        <Carousel>
+        <Carousel title='History'>
           {originData.origin.map(infographic => (
               <ImageCarousel
                 key={infographic.id}
@@ -87,7 +87,7 @@ const Infographics = ({ background }) => {
             }
           `}
         />
-        <Carousel>
+        <Carousel title='History'>
           {originData.origin.map(infographic => (
               <ImageCarousel
                 key={infographic.id}

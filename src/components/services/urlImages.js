@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid'
 
 // Data
-//Tokens públicos. El Storage de Firebase esta configurado para recibir solo peticiones de lectura.
+// Tokens públicos. El Storage de Firebase esta configurado para recibir solo peticiones de lectura.
 export const javascriptData = [
   {
     id: uuidv4(),
